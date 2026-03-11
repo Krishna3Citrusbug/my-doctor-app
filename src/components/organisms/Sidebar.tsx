@@ -126,7 +126,7 @@ export function Sidebar({
             <div key={item.label}>
               <motion.button
                 className={cn(
-                  "relative w-full flex items-center justify-between px-3 lg:px-4 py-2.5 lg:py-3 rounded-lg lg:rounded-none",
+                  "relative w-full flex items-center justify-between px-3 xl:px-4 py-2 xl:py-3 rounded-lg lg:rounded-none",
                   "text-sm font-medium transition-colors duration-200 cursor-pointer",
                   item.active
                     ? "bg-[#EEF2FF] text-[#1B4FF8]"
@@ -200,7 +200,7 @@ export function Sidebar({
                 key={item.label}
                 href={item.href}
                 className={cn(
-                  "flex items-center gap-2.5 lg:gap-3 px-3 lg:px-4 py-2.5 lg:py-3 rounded-lg lg:rounded-none text-sm font-medium text-[#64748B] hover:bg-[#F1F5F9]",
+                  "flex items-center gap-2.5 lg:gap-3 px-3 xl:px-4 py-2 xl:py-3 rounded-lg lg:rounded-none text-sm font-medium text-[#64748B] hover:bg-[#F1F5F9]",
                   collapsed && "px-2.5 justify-center"
                 )}
                 whileTap={{ scale: 0.98 }}
@@ -215,7 +215,7 @@ export function Sidebar({
 
       <motion.button
         className={cn(
-          "w-full flex items-center gap-2.5 lg:gap-3 px-3 lg:px-4 py-2.5 lg:py-3 rounded-lg lg:rounded-none text-sm font-medium text-[#C53030] hover:bg-red-50 mt-auto mx-2 lg:mx-0 cursor-pointer",
+          "w-full flex items-center gap-2.5 lg:gap-3 px-3 xl:px-4 py-2 xl:py-3 rounded-lg lg:rounded-none text-sm font-medium text-[#C53030] hover:bg-red-50 mt-auto mx-2 lg:mx-0 cursor-pointer",
           collapsed && "px-2.5 justify-center mx-0"
         )}
         whileTap={{ scale: 0.98 }}

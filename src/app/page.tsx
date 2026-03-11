@@ -55,7 +55,7 @@ export default function Dashboard() {
             </motion.div>
           </div>
           <div className="lg:col-span-4">
-            <motion.div variants={itemVariants} className="h-full">
+            <motion.div variants={itemVariants} className="h-full max-h-[900px] overflow-y-auto">
               <RecentActivities />
             </motion.div>
           </div>
