@@ -45,8 +45,8 @@ export default function Dashboard() {
         </motion.div>
 
         {/* Desktop: left column (Health + Find Doctor), right column (Recent Activities) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
-          <div className="lg:col-span-8 space-y-4">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-4 items-stretch">
+          <div className="xl:col-span-8 space-y-4">
             <motion.div variants={itemVariants}>
               <HealthStatusChart />
             </motion.div>
@@ -54,7 +54,7 @@ export default function Dashboard() {
               <FindDoctor />
             </motion.div>
           </div>
-          <div className="lg:col-span-4">
+          <div className="xl:col-span-4">
             <motion.div variants={itemVariants} className="h-full max-h-[900px] overflow-y-auto">
               <RecentActivities />
             </motion.div>

@@ -65,7 +65,7 @@ export function RecentActivities() {
 
       <div
         data-lenis-prevent
-        className="flex-1 min-h-0 space-y-3 overflow-y-auto pr-1 overscroll-contain"
+        className="flex-1 min-h-0 overflow-y-auto pr-1 overscroll-contain grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-3 "
       >
         {activities.map((activity, index) => (
           <ActivityCard

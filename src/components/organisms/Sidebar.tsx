@@ -228,20 +228,7 @@ export function Sidebar({
 
   return (
     <>
-      {/* Mobile Overlay */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose}
-          />
-        )}
-      </AnimatePresence>
-
-      {/* Mobile Sidebar */}
+      {/* Mobile/Tablet Sidebar (overlay for screens < lg) */}
       <AnimatePresence>
         {isOpen && (
           <>
@@ -269,22 +256,6 @@ export function Sidebar({
           </>
         )}
       </AnimatePresence>
-      
-      {/* Tablet Sidebar (md breakpoint) */}
-      <motion.aside
-        className={cn(
-          "hidden md:block lg:hidden bg-white border-r border-gray-200 h-screen sticky top-0 z-40"
-        )}
-        animate={{ width: collapsed ? 80 : 200 }}
-        transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
-      >
-        <div
-          data-lenis-prevent
-          className="h-full overflow-y-auto overflow-x-hidden overscroll-contain"
-        >
-          {sidebarContent}
-        </div>
-      </motion.aside>
       
       {/* Desktop Sidebar (always visible) */}
       <motion.aside
